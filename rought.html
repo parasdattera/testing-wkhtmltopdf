@@ -81,7 +81,6 @@ class TemplateData(BaseModel):
 async def convert_html_to_pdf(request: TemplateData):
     try:
         api_data = await get_gppdi_data(request.stateLGDCode,request.gpLGDCode)
-        print(api_data)
         # print("hi")
         # api_data = json.dumps(api_data)
         # api_data = json.load(api_data)
@@ -162,11 +161,6 @@ async def convert_html_to_pdf(request: TemplateData):
     <path d="M15.5493 1L10.5 9L20.5 9L15.5493 1Z" fill="#23B67A"/>
     </svg>
     """
-    
-    
-        wid = []
-        bc = []
-        
             
             
         fin_year = "2022-2023"
@@ -3311,17 +3305,6 @@ async def convert_html_to_pdf(request: TemplateData):
                 line-height: normal;
                 white-space: nowrap;
               }}
-              
-              
-              
-    
-    .rectangle-scmp {{
-      position: relative;
-      width: calc({{api_data['pdi_s'][0]['gps']}}*1%);
-      height: 22px;
-      background-color: {{api_data['pdi_s'][0]['gp_c']}};
-      border-radius: 5px 0px 0px 5px;
-    }}
               </style>
 
               <style>
@@ -3985,287 +3968,51 @@ async def convert_html_to_pdf(request: TemplateData):
                                 </div>
                                 </div>
                           </div>
-                          <div style=" display: flex;
-                flex-direction: column;
-                width: 268px;
-                height: 412px;
-                align-items: flex-start;
-                gap: 12px;
-                position: absolute;
-                top: 428px;
-                left: 22px;
-                border-radius: 5px;
-                border: 0.6px solid;
-                border-color: #909090;">
-                            <div style="display: flex;
-                height: 42px;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                padding: 10px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                background-color: #696969;
-                border-radius: 5px 5px 0px 0px;"><div style="position: relative;
-                width: fit-content;
-                font-family: 'Inter', Helvetica;
-                font-weight: 500;
-                color: #ffffff;
-                font-size: 18px;
-                letter-spacing: 0;
-                line-height: normal;
-                white-space: nowrap;">Grade Guidance</div></div>
-                            <div style="display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 35px;
-                padding: 0px 14px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                <div style="display: flex;
-                align-items: center;
-                gap: 4px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                  <div style="position: relative;
-                width: 37px;
-                height: 37px;
-                background-color: #5a9bd5;
-                border-radius: 4px;
-                box-shadow: 0px 4px 4px #00000040;"></div>
-                                  <div style="display: flex;
-                flex-direction: column;
-                width: 213px;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 10px 3px;
-                position: relative;
-                margin-right: -14px;">
-                                    <div style="position: relative;
-                align-self: stretch;
-                margin-top: -1px;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 800;
-                color: #2e2e2e;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">A+&nbsp;&nbsp;- Achiever</div>
-                                    <p style="position: relative;
-                align-self: stretch;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 500;
-                color: #000000;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">PDI Score between 90 and 100</p>
+                          <div class="frame-33">
+                            <div class="frame-34"><div class="text-wrapper-19">Grade Guidance</div></div>
+                            <div class="frame-35">
+                              <div class="frame-wrapper">
+                                <div class="frame-36">
+                                  <div class="rectangle-7"></div>
+                                  <div class="frame-37">
+                                    <div class="text-wrapper-20">A+&nbsp;&nbsp;- Achiever</div>
+                                    <p class="text-wrapper-21">PDI Score between 90 and 100</p>
                                   </div>
                                 </div>
                               </div>
-                              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                <div style="display: flex;
-                align-items: center;
-                gap: 4px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                  <div style="background-color: #90cf8e;
-                position: relative;
-                width: 37px;
-                height: 37px;
-                border-radius: 4px;
-                box-shadow: 0px 4px 4px #00000040;"></div>
-                                  <div style="display: flex;
-                flex-direction: column;
-                width: 213px;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 10px 3px;
-                position: relative;
-                margin-right: -14px;">
-                                    <div style="position: relative;
-                align-self: stretch;
-                margin-top: -1px;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 800;
-                color: #2e2e2e;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">A&nbsp;&nbsp;- Front Runner</div>
-                                    <p style="position: relative;
-                align-self: stretch;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 500;
-                color: #000000;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">PDI Score between 75 and 89</p>
+                              <div class="frame-38">
+                                <div class="frame-36">
+                                  <div class="rectangle-8"></div>
+                                  <div class="frame-37">
+                                    <div class="text-wrapper-20">A&nbsp;&nbsp;- Front Runner</div>
+                                    <p class="text-wrapper-21">PDI Score between 75 and 89</p>
                                   </div>
                                 </div>
                               </div>
-                              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                <div style="display: flex;
-                align-items: center;
-                gap: 4px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                  <div style=" background-color: #ffdc5e;
-                position: relative;
-                width: 37px;
-                height: 37px;
-                border-radius: 4px;
-                box-shadow: 0px 4px 4px #00000040;"></div>
-                                  <div style="display: flex;
-                flex-direction: column;
-                width: 213px;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 10px 3px;
-                position: relative;
-                margin-right: -14px;">
-                                    <div style="position: relative;
-                align-self: stretch;
-                margin-top: -1px;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 800;
-                color: #2e2e2e;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">B&nbsp;&nbsp;-&nbsp;&nbsp;Performer</div>
-                                    <p style="position: relative;
-                align-self: stretch;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 500;
-                color: #000000;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">PDI Score between 60 and 74</p>
+                              <div class="frame-38">
+                                <div class="frame-36">
+                                  <div class="rectangle-9"></div>
+                                  <div class="frame-37">
+                                    <div class="text-wrapper-20">B&nbsp;&nbsp;-&nbsp;&nbsp;Performer</div>
+                                    <p class="text-wrapper-21">PDI Score between 60 and 74</p>
                                   </div>
                                 </div>
                               </div>
-                              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                <div style="display: flex;
-                align-items: center;
-                gap: 4px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                  <div style="background-color: #fc852d;
-                position: relative;
-                width: 37px;
-                height: 37px;
-                border-radius: 4px;
-                box-shadow: 0px 4px 4px #00000040;"></div>
-                                  <div style="display: flex;
-                flex-direction: column;
-                width: 213px;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 10px 3px;
-                position: relative;
-                margin-right: -14px;">
-                                    <div style="position: relative;
-                align-self: stretch;
-                margin-top: -1px;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 800;
-                color: #2e2e2e;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">C&nbsp;&nbsp;- Aspirant</div>
-                                    <p style="position: relative;
-                align-self: stretch;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 500;
-                color: #000000;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">PDI Score between 40 and 59</p>
+                              <div class="frame-38">
+                                <div class="frame-36">
+                                  <div class="rectangle-10"></div>
+                                  <div class="frame-37">
+                                    <div class="text-wrapper-20">C&nbsp;&nbsp;- Aspirant</div>
+                                    <p class="text-wrapper-21">PDI Score between 40 and 59</p>
                                   </div>
                                 </div>
                               </div>
-                              <div style="display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                <div style="display: flex;
-                align-items: center;
-                gap: 4px;
-                position: relative;
-                align-self: stretch;
-                width: 100%;
-                flex: 0 0 auto;">
-                                  <div style=" background-color: #95192f;
-                position: relative;
-                width: 37px;
-                height: 37px;
-                border-radius: 4px;
-                box-shadow: 0px 4px 4px #00000040;"></div>
-                                  <div style="display: flex;
-                flex-direction: column;
-                width: 213px;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 10px 3px;
-                position: relative;
-                margin-right: -14px;">
-                                    <div style="position: relative;
-                align-self: stretch;
-                margin-top: -1px;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 800;
-                color: #2e2e2e;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">D&nbsp;&nbsp;- Beginner</div>
-                                    <p style="position: relative;
-                align-self: stretch;
-                font-family: 'Noto Sans', Helvetica;
-                font-weight: 500;
-                color: #000000;
-                font-size: 14px;
-                letter-spacing: 0;
-                line-height: normal;">PDI Score between 0 and 39</p>
+                              <div class="frame-38">
+                                <div class="frame-36">
+                                  <div class="rectangle-11"></div>
+                                  <div class="frame-37">
+                                    <div class="text-wrapper-20">D&nbsp;&nbsp;- Beginner</div>
+                                    <p class="text-wrapper-21">PDI Score between 0 and 39</p>
                                   </div>
                                 </div>
                               </div>
