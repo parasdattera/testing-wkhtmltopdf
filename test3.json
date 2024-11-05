@@ -1,0 +1,55 @@
+{"matrix": [
+        {"name": "P", "pdi_score": "56.43\\nC", "t1": "68.69\\nB", "t2": "85.20\\nA", "t3": "61.00\\nB", "t4": "60.67\\nB", "t5": "41.30\\nC", "t6": "40.56\\nC", "t7": "64.02\\nB", "t8": "40.53\\nC", "t9": "61.62\\nB"
+        },
+        {"name": "BP", "pdi_score": "-17.49", "t1": "-18.91", "t2": "-14.80", "t3": "-21.20", "t4": "-24.69", "t5": "-42.43", "t6": "-29.78", "t7": "-16.56", "t8": "-37.52", "t9": "-22.76"
+        },
+        {"name": "B", "pdi_score": "-3.43", "t1": "1.86", "t2": "3.74", "t3": "3.21", "t4": "1.60", "t5": "-12.45", "t6": "-3.75", "t7": "0.26", "t8": "-18.94", "t9": "0.72"
+        },
+        {"name": "D", "pdi_score": "1.06", "t1": "4.92", "t2": "8.52", "t3": "3.98", "t4": "5.10", "t5": "-6.70", "t6": "-1.31", "t7": "4.19", "t8": "-11.92", "t9": "8.17"
+        },
+        {"name": "S", "pdi_score": "-0.78", "t1": "3.97", "t2": "7.08", "t3": "2.99", "t4": "4.41", "t5": "-6.40", "t6": "-3.06", "t7": "2.87", "t8": "-15.01", "t9": "1.69"
+        }
+    ], "g": {"secretary_name": "SUNIL SAHU", "sarpanch_name": "NA", "population": 1865, "gp_name_en": "Mohsam", "b_name_en": "Sihora", "d_name_en": "Jabalpur", "state_name_en": "Madhya Pradesh"
+    }, "pdi_s": [
+        {"name": "overall", "gps": 56.43, "gp_g": "C - Aspirant", "gp_c": "#FF9934", "bgp": 73.92, "bgpn": "Hardot [
+                145323
+            ]", "bgp_g": "B - Performer", "bgp_c": "#FED966", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 59.86, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 55.37, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 57.21
+        },
+        {"name": "t1", "gps": 68.69, "gp_g": "B - Performer", "gp_c": "#FED966", "bgp": 87.6, "bgpn": "Mainha [
+                145101
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "B - Performer", "b_c": "#FED966", "b": 66.83, "d_g": "B - Performer", "d_c": "#FED966", "d": 63.77, "s_g": "B - Performer", "s_c": "#FED966", "s": 64.72
+        },
+        {"name": "t2", "gps": 85.2, "gp_g": "A - Front Runner", "gp_c": "#A7D08C", "bgp": 100.0, "bgpn": "Simroda Kairar [
+                144055
+            ]", "bgp_g": "A+ - Achiever", "bgp_c": "#5B9BD5", "b_g": "A - Front Runner", "b_c": "#A7D08C", "b": 81.46, "d_g": "A - Front Runner", "d_c": "#A7D08C", "d": 76.68, "s_g": "A - Front Runner", "s_c": "#A7D08C", "s": 78.12
+        },
+        {"name": "t3", "gps": 61.0, "gp_g": "B - Performer", "gp_c": "#FED966", "bgp": 82.2, "bgpn": "Itama [
+                146913
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 57.79, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 57.02, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 58.01
+        },
+        {"name": "t4", "gps": 60.67, "gp_g": "B - Performer", "gp_c": "#FED966", "bgp": 85.36, "bgpn": "Kerwa [
+                133218
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 59.07, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 55.57, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 56.26
+        },
+        {"name": "t5", "gps": 41.3, "gp_g": "C - Aspirant", "gp_c": "#FF9934", "bgp": 83.73, "bgpn": "Surana [
+                133239
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 53.75, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 48.0, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 47.7
+        },
+        {"name": "t6", "gps": 40.56, "gp_g": "C - Aspirant", "gp_c": "#FF9934", "bgp": 70.34, "bgpn": "Bghawali [
+                136627
+            ]", "bgp_g": "B - Performer", "bgp_c": "#FED966", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 44.31, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 41.87, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 43.62
+        },
+        {"name": "t7", "gps": 64.02, "gp_g": "B - Performer", "gp_c": "#FED966", "bgp": 80.58, "bgpn": "Dhapara(Gangrua) [
+                149485
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "B - Performer", "b_c": "#FED966", "b": 63.76, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 59.83, "s_g": "B - Performer", "s_c": "#FED966", "s": 61.15
+        },
+        {"name": "t8", "gps": 40.53, "gp_g": "C - Aspirant", "gp_c": "#FF9934", "bgp": 78.05, "bgpn": "Sunpura [
+                154481
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "C - Aspirant", "b_c": "#FF9934", "b": 59.47, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 52.45, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 55.54
+        },
+        {"name": "t9", "gps": 61.62, "gp_g": "B - Performer", "gp_c": "#FED966", "bgp": 84.38, "bgpn": "Kishanpur [
+                139220
+            ]", "bgp_g": "A - Front Runner", "bgp_c": "#A7D08C", "b_g": "B - Performer", "b_c": "#FED966", "b": 60.9, "d_g": "C - Aspirant", "d_c": "#FF9934", "d": 53.45, "s_g": "C - Aspirant", "s_c": "#FF9934", "s": 59.93
+        }
+    ]
+}
