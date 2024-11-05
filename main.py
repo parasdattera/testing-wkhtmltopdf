@@ -2203,7 +2203,12 @@ async def convert_html_to_pdf(request: TemplateData):
                 background-color: #fcfcfc;
                 border-radius: 4.45px;
                 box-shadow: 0px 0px 11.96px #00000026;
+                border-radius: 5px;
+    border: 0.4px solid;
+    border-color: #696969;
               }}
+
+              
               
               .final-done .frame-50 {{
                 display: flex;
@@ -4202,14 +4207,21 @@ async def convert_html_to_pdf(request: TemplateData):
                             </div>
                             <div style="display: inline-flex;
               align-items: center;
-              gap: 38px;
               position: relative;
               flex: 0 0 auto;">
                               <div style="display: flex;
               flex-direction: column;
               width: 362px;
+              margin-top:10px;
+              margin-left:-8px;
+              margin-right:90px;
+              padding-top:10px;
+              padding-left:-90px;
+              padding-right:10px;
+              padding-bottom:10px
               align-items: flex-start;
               position: relative;
+              border:2px solid #adbcc0;
               box-shadow: 0px 2px 10px #0000001a;">
                                 <div style="display: flex;
               height: 39px;
@@ -4221,9 +4233,25 @@ async def convert_html_to_pdf(request: TemplateData):
               width: 100%;
               background-color: #ffe0e0;
               border-radius: 5px 5px 0px 0px;">
-                                  <p class="text-wrapper-8">Theme 1 - Poverty Free</p>
+                                  <p style="position: relative;
+                width: fit-content;
+                margin-top: -2.9px;
+                margin-bottom: -2.1px;
+                font-family: 'Inter', Helvetica;
+                font-weight: 600;
+                color: #000000;
+                font-size: 11.5px;
+                letter-spacing: 0;
+                line-height: normal;">Theme 1 - Poverty Free</p>
                                  
-                                   <svg class="group-2" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <div style="
+                                   
+                                   margin-left:120px;"><svg style="position: relative;
+                width: 28.64px;
+                height: 28.64px;
+                
+                
+                " width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group 3339">
                                 <g id="Group 5">
                                 <circle id="Ellipse 3" cx="21" cy="21" r="21" fill="#95192F"/>
@@ -4235,7 +4263,7 @@ async def convert_html_to_pdf(request: TemplateData):
                                 </g>
                                 </g>
                                 </g>
-                                </svg>
+                                </svg></div>
                                 </div>
                                 <div style="display: flex;
               flex-direction: column;
@@ -4255,7 +4283,9 @@ async def convert_html_to_pdf(request: TemplateData):
               gap: 8px;
               position: relative;
               flex: 0 0 auto;
-              margin-top: -5px;">
+              margin-top:-60px;
+              
+              ">
                                     <div style="display: flex;
               width: 187px;
               height: 22px;
@@ -4274,7 +4304,7 @@ async def convert_html_to_pdf(request: TemplateData):
                 color: #000000;
                 font-size: 12px;
                 letter-spacing: 0;
-                line-height: normal;">&nbsp; &nbsp;&nbsp; {api_data['pdi_s'][1]['bgp_g'][0:1]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['bgp']}</div>
+                line-height: normal;">&nbsp; &nbsp;&nbsp; {api_data['pdi_s'][1]['bgp_g'][0:1]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['bgp']}</div>
                                     </div>
                                     <p style="width: 143px;
               margin-top: -1px;
@@ -4304,6 +4334,7 @@ async def convert_html_to_pdf(request: TemplateData):
       align-items: center;
       gap: 69px;
       position: relative;
+      margin-bottom:3px;
       background-color: #d9d9d9;
       border-radius: 5px;">
                                       <div class="rectangle-3mp"></div>
@@ -4316,7 +4347,7 @@ async def convert_html_to_pdf(request: TemplateData):
       color: #000000;
       font-size: 12px;
       letter-spacing: 0;
-      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['gp_g'][:2]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['gps']}</div>
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['gp_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['gps']}</div>
                                     </div>
                                     <div style="position: relative;
       width: fit-content;
@@ -4324,6 +4355,7 @@ async def convert_html_to_pdf(request: TemplateData):
       font-weight: 500;
       color: #000000;
       font-size: 12px;
+      margin-left:50px;
       letter-spacing: 0;
       line-height: normal;">My Panchayat</div>
                                   </div>
@@ -4331,6 +4363,7 @@ async def convert_html_to_pdf(request: TemplateData):
       align-items: center;
       gap: 8px;
       position: relative;
+      margin-bottom:3px;
       flex: 0 0 auto;">
                                     <div style="display: flex;
       width: 187px;
@@ -4349,7 +4382,7 @@ async def convert_html_to_pdf(request: TemplateData):
       color: #000000;
       font-size: 12px;
       letter-spacing: 0;
-      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['b_g'][:2]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;{api_data['pdi_s'][1]['b']}</div>
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['b_g'][:2]}&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;{api_data['pdi_s'][1]['b']}</div>
                                     </div>
                                     <div style="position: relative;
       width: fit-content;
@@ -4357,6 +4390,7 @@ async def convert_html_to_pdf(request: TemplateData):
       font-weight: 500;
       color: #000000;
       font-size: 12px;
+      margin-left:50px;
       letter-spacing: 0;
       line-height: normal;">Block</div>
                                   </div>
@@ -4364,6 +4398,7 @@ async def convert_html_to_pdf(request: TemplateData):
       align-items: center;
       gap: 8px;
       position: relative;
+      margin-bottom:3px;
       flex: 0 0 auto;">
                                     <div style=" display: flex;
       width: 187px;
@@ -4382,7 +4417,7 @@ async def convert_html_to_pdf(request: TemplateData):
       color: #000;
       font-size: 12px;
       letter-spacing: 0;
-      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['d_g'][:2]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['d']}</div>
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['d_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['d']}</div>
                                     </div>
                                     <div style="position: relative;
       width: fit-content;
@@ -4390,6 +4425,7 @@ async def convert_html_to_pdf(request: TemplateData):
       font-weight: 500;
       color: #000000;
       font-size: 12px;
+      margin-left:50px;
       letter-spacing: 0;
       line-height: normal;">District</div>
                                   </div>
@@ -4397,6 +4433,7 @@ async def convert_html_to_pdf(request: TemplateData):
       align-items: center;
       gap: 8px;
       position: relative;
+      margin-bottom:3px;
       flex: 0 0 auto;
       margin-bottom: -5px;">
                                     <div style="display: flex;
@@ -4417,7 +4454,7 @@ async def convert_html_to_pdf(request: TemplateData):
       color: #000000;
       font-size: 12px;
       letter-spacing: 0;
-      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['s_g'][:2]}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][1]['s']}</div>
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][1]['s_g'][:2]}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  {api_data['pdi_s'][1]['s']}</div>
                                     </div>
                                     <div style="position: relative;
       width: fit-content;
@@ -4425,12 +4462,521 @@ async def convert_html_to_pdf(request: TemplateData):
       font-weight: 500;
       color: #000000;
       font-size: 12px;
+      text-align:center;
+      margin-left:50px;
       letter-spacing: 0;
       line-height: normal;">State</div>
                                   </div>
                                 </div>
                               </div>
+
+
                               <div style="display: flex;
+              flex-direction: column;
+              width: 362px;
+              margin-top:10px;
+              margin-left:-70px;
+              margin-right:90px;
+              padding-top:10px;
+              padding-left:-70px;
+              padding-right:10px;
+              padding-bottom:10px
+              align-items: flex-start;
+              position: relative;
+              border:2px solid #adbcc0;
+              box-shadow: 0px 2px 10px #0000001a;">
+                                <div style="display: flex;
+              height: 39px;
+              align-items: center;
+              gap: 190px;
+              padding: 15px 10px;
+              position: relative;
+              align-self: stretch;
+              width: 100%;
+              background-color: #c6ffe8;
+              border-radius: 5px 5px 0px 0px;">
+                                  <p style="position: relative;
+                width: fit-content;
+                margin-top: -2.9px;
+                margin-bottom: -2.1px;
+                font-family: 'Inter', Helvetica;
+                font-weight: 600;
+                color: #000000;
+                font-size: 11.5px;
+                letter-spacing: 0;
+                line-height: normal;">Theme 2 - Healthy</p>
+                                 
+                                   <div style="
+                                   
+                                   margin-left:140px;"><svg class="group-3" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="21" fill="#23B67A"/>
+                                    <path d="M30.0688 23.3209H38.2209C37.8183 27.5693 34.2958 36.0659 23.4263 36.0659V31.62H28.5591V25.9885H23.4263V24.2101C25.9424 22.8269 30.733 19.0529 29.7669 15.0219H25.5398C24.6341 15.0219 23.9698 15.1404 23.7283 16.8003V18.875C23.7283 19.7642 23.4263 20.6534 22.2186 20.6534H18.8974M18.5955 15.0219L11.9531 15.0219C11.6514 18.2822 12.9797 21.7204 18.2937 23.6173V25.9885H13.4629V31.62H18.2937V36.0659C12.5571 36.9551 5.31084 31.9164 3.49927 23.3209H11.0475" stroke="white" stroke-width="1.84209" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.6749 9.09329C17.6749 10.3693 16.6164 11.4326 15.2747 11.4326C13.933 11.4326 12.8745 10.3693 12.8745 9.09329C12.8745 7.81732 13.933 6.75399 15.2747 6.75399C16.6164 6.75399 17.6749 7.81732 17.6749 9.09329Z" stroke="white" stroke-width="1.84209"/>
+                                    <path d="M29.1485 9.09329C29.1485 10.3693 28.09 11.4326 26.7483 11.4326C25.4066 11.4326 24.3481 10.3693 24.3481 9.09329C24.3481 7.81732 25.4066 6.75399 26.7483 6.75399C28.09 6.75399 29.1485 7.81732 29.1485 9.09329Z" stroke="white" stroke-width="1.84209"/>
+                                    <path d="M37.602 17.9843C37.602 19.2603 36.5436 20.3236 35.2018 20.3236C33.8601 20.3236 32.8017 19.2603 32.8017 17.9843C32.8017 16.7083 33.8601 15.645 35.2018 15.645C36.5436 15.645 37.602 16.7083 37.602 17.9843Z" stroke="white" stroke-width="1.84209"/>
+                                    <path d="M9.22066 17.9843C9.22066 19.2603 8.1622 20.3236 6.82049 20.3236C5.47877 20.3236 4.42031 19.2603 4.42031 17.9843C4.42031 16.7083 5.47877 15.645 6.82049 15.645C8.1622 15.645 9.22066 16.7083 9.22066 17.9843Z" stroke="white" stroke-width="1.84209"/>
+                                    </svg></div>
+                                </div>
+                                <div style="display: flex;
+              flex-direction: column;
+              height: 211px;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 16px;
+              padding: 22px 9px;
+              position: relative;
+              align-self: stretch;
+              width: 100%;
+              background-color: #ffffff;
+              border-radius: 0px 0px 5px 5px;">
+                                  <div style="display: flex;
+              width: 191px;
+              align-items: center;
+              gap: 8px;
+              position: relative;
+              flex: 0 0 auto;
+              margin-top:-60px;
+              
+              ">
+                                    <div style="display: flex;
+              width: 187px;
+              height: 22px;
+              align-items: center;
+              gap: 21px;
+              position: relative;
+              background-color: #d9d9d9;
+              border-radius: 5px;">
+                                      <div class="rectangle-2t2bp"></div>
+                                      
+                                      <div style="position: absolute;
+                top: 0;
+                left: 6px;
+                font-family: 'Noto Sans', Helvetica;
+                font-weight: 500;
+                color: #000000;
+                font-size: 12px;
+                letter-spacing: 0;
+                line-height: normal;">&nbsp; &nbsp;&nbsp; {api_data['pdi_s'][2]['bgp_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][2]['bgp']}</div>
+                                    </div>
+                                    <p style="width: 143px;
+              margin-top: -1px;
+              margin-right: -147px;
+              font-family: 'Noto Sans', Helvetica;
+              font-weight: 400;
+              text-align: center;
+              position: relative;
+              color: #000000;
+              font-size: 12px;
+              letter-spacing: 0;
+              line-height: normal;">
+                                      <span style="font-weight: 500;">Best Panchayat </span>
+                                      <span style="font-weight: 700;">{api_data['pdi_s'][2]['bgpn']}</span>
+                                    </p>
+                                  </div>
+                                  <div style="display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 69px;
+      position: relative;
+      margin-bottom:3px;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-3mp2"></div>
+                                      
+                                      <div style="position: absolute;
+      top: 2px;
+      left: 6px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['gp_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][2]['gps']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">My Panchayat</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 85px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-4t2b"></div>
+                                      <div style="position: absolute;
+      top: 2px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['b_g'][:2]}&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;{api_data['pdi_s'][2]['b']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">Block</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;">
+                                    <div style=" display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 110px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-5t2d"></div>
+                                      <div style="position: absolute;
+      top: 1px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['d_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][2]['d']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">District</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;
+      margin-bottom: -5px;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 50px;
+      padding: 0px 1px 0px 0px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-6t2s"></div>
+                                      <div style="position: absolute;
+      top: 1px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['s_g'][:2]}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  {api_data['pdi_s'][2]['s']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      text-align:center;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">State</div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+
+                              <div style="display: flex;
+              flex-direction: column;
+              width: 362px;
+              margin-top:10px;
+              margin-left:-70px;
+              padding-top:10px;
+              padding-left:-70px;
+              padding-right:10px;
+              padding-bottom:10px
+              align-items: flex-start;
+              position: relative;
+              border:2px solid #adbcc0;
+              box-shadow: 0px 2px 10px #0000001a;">
+                                <div style="display: flex;
+              height: 39px;
+              align-items: center;
+              gap: 190px;
+              padding: 15px 10px;
+              position: relative;
+              align-self: stretch;
+              width: 100%;
+              background-color: #ffe7ba;
+              border-radius: 5px 5px 0px 0px;">
+                                  <p style="position: relative;
+                width: fit-content;
+                margin-top: -2.9px;
+                margin-bottom: -2.1px;
+                font-family: 'Inter', Helvetica;
+                font-weight: 600;
+                color: #000000;
+                font-size: 11.5px;
+                letter-spacing: 0;
+                line-height: normal;">Theme 3 - Child Friendly</p>
+                                 
+                                   <div style="
+                                   
+                                   margin-left:120px;"><svg class="group-2" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="21" fill="#FCB732"/>
+                                    <path d="M29.5071 18.8415C33.9793 26.4287 27.2293 35.3346 22.3247 36.1876C20.9696 29.9538 23.9509 26.9725 26.1192 23.178C21.5116 30.4959 15.5489 27.7856 11.2124 23.9911C15.4648 27.5145 15.7296 33.8386 15.2779 36.1876C4.00295 31.6342 6.24348 21.8229 8.77312 17.4863L6.60486 15.5891L5.24969 16.6732L5.52073 8.8133L13.6517 9.35536L12.2965 10.9816L14.1938 13.4209C14.8442 12.7704 16.6331 12.6078 17.4462 12.6078L17.7172 10.4395H15.82L20.4275 5.83194L24.764 10.9816H23.1378V13.1498C26.2586 14.8258 28.295 16.7852 29.5071 18.8415ZM29.5071 18.8415L31.2688 17.4863M31.2688 17.4863C33.2203 19.6546 35.1536 18.5705 35.8764 17.7574C37.7736 15.3181 36.1474 13.4209 35.0633 12.8788M31.2688 17.4863C30.5921 16.8096 30.5912 15.322 31.2324 14.1707M35.0633 12.8788C37.0147 7.89179 32.895 6.10297 30.7268 6.64504C26.7045 7.65059 27.2033 12.0657 28.8295 13.4209M35.0633 12.8788C33.1636 12.2003 31.8753 13.0164 31.2324 14.1707M26.9323 15.5891L28.8295 13.4209M28.8295 13.4209C29.3716 13.8726 30.4557 14.505 31.2324 14.1707" stroke="white" stroke-width="1.67327" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="18.8011" cy="22.906" r="2.41575" stroke="white" stroke-width="1.67327"/>
+                                    </svg></div>
+                                </div>
+                                <div style="display: flex;
+              flex-direction: column;
+              height: 211px;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 16px;
+              padding: 22px 9px;
+              position: relative;
+              align-self: stretch;
+              width: 100%;
+              background-color: #ffffff;
+              border-radius: 0px 0px 5px 5px;">
+                                  <div style="display: flex;
+              width: 191px;
+              align-items: center;
+              gap: 8px;
+              position: relative;
+              flex: 0 0 auto;
+              margin-top:-60px;
+              
+              ">
+                                    <div style="display: flex;
+              width: 187px;
+              height: 22px;
+              align-items: center;
+              gap: 21px;
+              position: relative;
+              background-color: #d9d9d9;
+              border-radius: 5px;">
+                                      <div class="rectangle-2t3bp"></div>
+                                      
+                                      <div style="position: absolute;
+                top: 0;
+                left: 6px;
+                font-family: 'Noto Sans', Helvetica;
+                font-weight: 500;
+                color: #000000;
+                font-size: 12px;
+                letter-spacing: 0;
+                line-height: normal;">&nbsp; &nbsp;&nbsp; {api_data['pdi_s'][3]['bgp_g'][0:1]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][3]['bgp']}</div>
+                                    </div>
+                                    <p style="width: 143px;
+              margin-top: -1px;
+              margin-right: -147px;
+              font-family: 'Noto Sans', Helvetica;
+              font-weight: 400;
+              text-align: center;
+              position: relative;
+              color: #000000;
+              font-size: 12px;
+              letter-spacing: 0;
+              line-height: normal;">
+                                      <span style="font-weight: 500;">Best Panchayat </span>
+                                      <span style="font-weight: 700;">{api_data['pdi_s'][3]['bgpn']}</span>
+                                    </p>
+                                  </div>
+                                  <div style="display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 69px;
+      position: relative;
+      margin-bottom:3px;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-3t3mp"></div>
+                                      
+                                      <div style="position: absolute;
+      top: 2px;
+      left: 6px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][3]['gp_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][3]['gps']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">My Panchayat</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 85px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-4t3b"></div>
+                                      <div style="position: absolute;
+      top: 2px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][3]['b_g'][:2]}&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;{api_data['pdi_s'][3]['b']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">Block</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;">
+                                    <div style=" display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 110px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-5t3d"></div>
+                                      <div style="position: absolute;
+      top: 1px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][3]['d_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {api_data['pdi_s'][3]['d']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">District</div>
+                                  </div>
+                                  <div style="display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      margin-bottom:3px;
+      flex: 0 0 auto;
+      margin-bottom: -5px;">
+                                    <div style="display: flex;
+      width: 187px;
+      height: 22px;
+      align-items: center;
+      gap: 50px;
+      padding: 0px 1px 0px 0px;
+      position: relative;
+      background-color: #d9d9d9;
+      border-radius: 5px;">
+                                      <div class="rectangle-6t3s"></div>
+                                      <div style="position: absolute;
+      top: 1px;
+      left: 5px;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][3]['s_g'][:2]}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  {api_data['pdi_s'][3]['s']}</div>
+                                    </div>
+                                    <div style="position: relative;
+      width: fit-content;
+      font-family: 'Noto Sans', Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 12px;
+      text-align:center;
+      margin-left:50px;
+      letter-spacing: 0;
+      line-height: normal;">State</div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                              
+                              <!-- <div style="display: flex;
               flex-direction: column;
               width: 362px;
               align-items: flex-start;
@@ -4453,7 +4999,7 @@ async def convert_html_to_pdf(request: TemplateData):
                                     <div class="frame-13">
                                       <div class="rectangle-2t2bp"></div>
                                       
-                                      <div class="text-wrapper-10">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['bgp_g'][:2]} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;   {api_data['pdi_s'][2]['bgp']}</div>
+                                      <div class="text-wrapper-10">&nbsp; &nbsp;&nbsp;{api_data['pdi_s'][2]['bgp_g'][:2]} &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;   {api_data['pdi_s'][2]['bgp']}</div>
                                     </div>
                                     <p class="best-panchayat-2">
                                       <span class="text-wrapper-11">Best Panchayat </span>
@@ -4493,8 +5039,8 @@ async def convert_html_to_pdf(request: TemplateData):
                                     <div class="text-wrapper-14">State</div>
                                   </div> 
                                 </div>
-                                </div>
-                                <div style="display: flex;
+                                </div> -->
+                                <!-- <div style="display: flex;
               flex-direction: column;
               width: 362px;
               align-items: flex-start;
@@ -4556,9 +5102,9 @@ async def convert_html_to_pdf(request: TemplateData):
                                     <div class="text-wrapper-14">State</div>
                                   </div>
                                 </div>
+                                </div> -->
                                 </div>
-                                </div>
-                                <div class="frame-8">
+                                <!-- <div class="frame-8">
                                 <div class="frame-9">
                                     <div class="frame-25">
                                         <p class="text-wrapper-8">Theme 4 - Water Sufficient</p>
@@ -4729,8 +5275,8 @@ async def convert_html_to_pdf(request: TemplateData):
                                   </div>
                                 </div>
                                 </div>
-                                </div>
-                                <div class="frame-8">
+                                </div> -->
+                                <!-- <div class="frame-8">
                                 <div class="frame-9">
                                     <div class="frame-28">
                                         <div class="text-wrapper-8">Theme 7 -&nbsp;&nbsp;Socially Secured</div>
@@ -4911,7 +5457,7 @@ async def convert_html_to_pdf(request: TemplateData):
                                   </div>
                                 </div>
                                 </div>
-                                </div>
+                                </div> -->
                           </div>
                           <div style=" display: flex;
                 flex-direction: column;
